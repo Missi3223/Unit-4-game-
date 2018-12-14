@@ -1,0 +1,53 @@
+body {
+	margin: 0px;
+	padding: 0px;
+}
+
+.jumbotron {
+	background-color: purple;
+	color: white;
+}
+img{
+	
+	height:100px;
+	width:100px;
+}
+
+
+.target-number {
+	font-size: 30px;
+	text-align: center;
+	background-color: rgb(228, 56, 156);
+	border-style: solid;
+	border-color: #ebebeb;
+	border-width: 4px;
+}
+
+.win-lose-counter {
+	background-color: #9CE7F8;
+	border-style: solid;
+	border-color: #ebebeb;
+	border-width: 4px;
+}
+
+.wins,.losses{
+	text-align: center;
+	color: white;
+	background-color: #aa4a4a;
+	font-size:30px;
+}
+
+#total-score {
+	text-align: center;
+	color: white;
+	background-color: #aa4a4a;
+}
+
+.score-number {
+	font-size: 30px;
+	text-align: center;
+	background-color: #9CE7F8;
+	border-style: solid;
+	border-color: #ebebeb;
+	border-width: 4px;
+}
