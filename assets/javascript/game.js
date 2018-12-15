@@ -42,41 +42,20 @@ $(document).ready(function() {
 
 		gemOne = Math.floor(Math.random() * 12) + 1;  
 			console.log("Gem 1: " + gemOne); 
-		$("#img1").html("<img src=" + "assets/images/Crystal-Blue.jpg" + " value=" + gemOne + ">"); 
-
+		$("#img1").attr("value" , gemOne ); 
+	
+		
 		gemTwo = Math.floor(Math.random() * 12) + 1; 
 			console.log("Gem 2: " + gemTwo); 
-		$("#img2").html("<img src=" + "assets/images/Crystal-Purple.jpg" + " value=" + gemTwo + ">"); 
+		$("#img2").attr("value" , gemTwo );
 
 		gemThree = Math.floor(Math.random() * 12) + 1; 
 			console.log("Gem 3: " + gemThree); 
-		$("#img3").html("<img src=" + "assets/images/Crystal-Red.jpg" + " value=" + gemThree + ">");
+		$("#img3").attr("value" , gemThree );
 	
 		gemFour = Math.floor(Math.random() * 12) + 1; 
 			console.log("Gem 4: " + gemFour); 
-		$("#img4").html("<img src=" + "assets/images/Crystal-Yellow.jpg" + " value=" + gemFour + ">");
-
-		$("img").on("click", function () {
-			var newScore = score += parseInt($(this).attr("value")); 
-				console.log("New Score: " + newScore); 
-			$(".score-counter").html(newScore); 
-
-			if(newScore === compPick) { 
-				wins++ ; 
-				$(".wins").html("Wins: " + wins);
-					console.log("Wins: " + wins); 
-					reset(); 
-			} 
-
-			else if(newScore > compPick) {
-				losses++ ; 
-				$(".losses").html("Losses: " + losses); 
-					console.log("Losses: " + losses); 
-					reset(); 
-				
-			}
-
-		}); 
+		$("#img4").attr("value" , gemFour );
 
 	}
 
